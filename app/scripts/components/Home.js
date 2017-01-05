@@ -6,6 +6,9 @@ export default React.createClass({
   render(){
     return(
       <div className="home">
+        <header>
+          <h1>Jeff Lawlis</h1>
+        </header>
         <ProjectThumbs/>
         <Personal/>
       </div>

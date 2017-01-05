@@ -7,12 +7,14 @@ export default React.createClass({
       <li className="projects">
         <Link to={`/project/${this.props.project.name}`}>
           <h3>{this.props.project.name}</h3>
-          <img src={this.props.project.image}/>
+          <div className="image-container">
+            <img src={this.props.project.image}/>
+            <div className="description-container">
+              <p>Light Description</p>
+            </div>
+          </div>
         </Link>
-        <a href={this.props.project.url}>See Live Project</a>
-        <span>OR</span>
-        <a href={this.props.project.githubUrl}>View on Github</a>
       </li>
     );
-  },
+  }
 });

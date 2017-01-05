@@ -4,7 +4,6 @@ import SingleProjThumb from './SingleProjThumb';
 
 export default React.createClass({
 render(){
-  console.log(projects);
   let allprojs = projects.map((proj, i, arr)=>{
     return (
       <SingleProjThumb key={i} project={proj}/>

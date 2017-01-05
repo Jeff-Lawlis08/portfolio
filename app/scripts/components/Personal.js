@@ -6,7 +6,6 @@ export default React.createClass({
     return(
       <div className="personal">
         <h2>About Me</h2>
-        <h3>Jeff Lawlis</h3>
         <img src="../../assets/images/headshot-min.jpg"/>
       </div>
     );
