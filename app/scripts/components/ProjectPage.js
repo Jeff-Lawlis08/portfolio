@@ -29,7 +29,7 @@ export default React.createClass({
         <a href={this.state.project.url}>See Live Project</a>
         <span>OR</span>
         <a href={this.state.project.githubUrl}>View on Github</a>
-        <p>Description</p>
+        <p>{this.state.project.description}</p>
         <i className="fa fa-arrow-circle-left" aria-hidden="true" onClick={this.handleBack}></i>
         <i className="fa fa-arrow-circle-right" aria-hidden="true" onClick={this.handleForward}></i>
 

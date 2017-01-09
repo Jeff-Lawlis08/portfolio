@@ -4,6 +4,11 @@ body{
 #container{
   width: 100%;
 }
+nav {
+  a{
+    float: right;
+  }
+}
 .personal{
   width: 100%;
   img{
@@ -34,27 +39,31 @@ body{
     position: relative;
   }
   .projects{
-    .description-container{
-      display: none;
-    }
-    &:hover .description-container{
+    margin-bottom: 2rem;
+    .title-container{
       background-color: black;
       opacity: 0.7;
       display: block;
       position: absolute;
-      bottom: 0px;
+      top: 0px;
       // left: 33px;
       width: 200px;
       text-align: center;
-      p{
+      h3{
         color: white;
       }
     }
-    &:hover .image-container {
+    &:hover .title-container{
+      display: none;
+    }
+    .image-container {
       background-color: #404040;
     }
-    &:hover img {
+    img {
       opacity: 0.6;
+    }
+    &:hover img{
+      opacity: 1;
     }
   }
 
@@ -67,6 +76,7 @@ body{
   }
 }
 .proj-page{
+  text-align: center;
   img{
     object-fit: cover;
     height: 200px;

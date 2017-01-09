@@ -6,11 +6,10 @@ export default React.createClass({
     return(
       <li className="projects">
         <Link to={`/project/${this.props.project.name}`}>
-          <h3>{this.props.project.name}</h3>
           <div className="image-container">
             <img src={this.props.project.image}/>
-            <div className="description-container">
-              <p>Light Description</p>
+            <div className="title-container">
+              <h3>{this.props.project.name}</h3>
             </div>
           </div>
         </Link>

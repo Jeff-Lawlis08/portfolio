@@ -7,8 +7,8 @@ export default React.createClass({
       <nav>
         <span>Jeff Lawlis</span>
         <span>Web Developer</span>
-        <Link to="/">Home</Link>
         <Link to="/resume">Resume</Link>
+        <Link to="/">Home</Link>
       </nav>
     );
   }
