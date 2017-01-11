@@ -5,10 +5,14 @@ export default React.createClass({
   render(){
     return(
       <nav>
-        <span>Jeff Lawlis</span>
-        <span>Web Developer</span>
-        <Link to="/resume">Resume</Link>
-        <Link to="/">Home</Link>
+        <div id='name-title'>
+          <span>Jeff Lawlis</span>
+          <span>Web Developer</span>
+        </div>
+        <a href='#personal'>ABOUT ME</a>
+        <a href='#project-container'>PROJECTS</a>
+        <Link to="/resume">RÈSUMÈ</Link>
+        <Link to="/">HOME</Link>
       </nav>
     );
   }

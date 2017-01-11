@@ -10,7 +10,7 @@ render(){
     )
   })
   return(
-    <div className="project-container">
+    <div id="project-container">
       <h2>My Projects</h2>
       <ul>
       {allprojs}

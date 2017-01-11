@@ -26,9 +26,11 @@ export default React.createClass({
       <div className="proj-page">
         <h3>{this.state.project.name}</h3>
         <img src={this.state.project.image}/>
-        <a href={this.state.project.url}>See Live Project</a>
-        <span>OR</span>
-        <a href={this.state.project.githubUrl}>View on Github</a>
+        <div id="proj-links">
+          <a href={this.state.project.url}>See Live Project</a>
+          <span>OR</span>
+          <a href={this.state.project.githubUrl}>View on Github</a>
+        </div>
         <p>{this.state.project.description}</p>
         <i className="fa fa-arrow-circle-left" aria-hidden="true" onClick={this.handleBack}></i>
         <i className="fa fa-arrow-circle-right" aria-hidden="true" onClick={this.handleForward}></i>
