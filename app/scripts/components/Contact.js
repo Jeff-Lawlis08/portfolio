@@ -38,6 +38,7 @@ export default React.createClass({
     let name = this.refs.name.value;
     let email = this.refs.email.value;
     let message = this.refs.message.value;
+    if(name!=='' && email!=='' && message!==''){
     $.ajax({
         type: 'POST',
         url: 'https://api.backendless.com/v1/messaging/email',
@@ -63,5 +64,12 @@ export default React.createClass({
           this.refs.message.value='';
         }
   });
+} else if(name===''){
+  alert('Please enter your name');
+} else if(email===''){
+  alert('Please enter your email');
+} else if(message===''){
+  alert('Please enter a message');
+}
 }
 });
