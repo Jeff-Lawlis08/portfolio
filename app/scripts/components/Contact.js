@@ -5,12 +5,13 @@ import config from '../config';
 export default React.createClass({
   getInitialState(){
     return{
-      sent: false
+      sent: false,
+      sending: false
     }
   },
   render(){
     let emailForm;
-    if(this.state.sent===false){
+    if(this.state.sent===false && this.state.sending===false){
       emailForm=  (
         <div>
           <h2>Contact Me</h2>
@@ -22,7 +23,11 @@ export default React.createClass({
           </form>
         </div>
       );
-    } else {
+    } else if(this.state.sending===true){
+      emailForm = (
+        <h2>Sending<i className="fa fa-spinner fa-spin" aria-hidden="true"></i></h2>
+      )
+    } else if(this.state.sent===true && this.state.sending===false){
       emailForm = (
         <h2>Message Sent!</h2>
       );
@@ -35,6 +40,7 @@ export default React.createClass({
   },
   handleSubmit(e){
     e.preventDefault();
+    this.setState({sending: true});
     let name = this.refs.name.value;
     let email = this.refs.email.value;
     let message = this.refs.message.value;
@@ -55,13 +61,13 @@ export default React.createClass({
             to:['jeffrey.lawlis@g.austincc.edu']
         }),
         success: (response)=>{
-          this.setState({sent: true})
+          this.setState({sent: true, sending: false})
           setTimeout(()=>{
             this.setState({sent: false});
+            this.refs.name.value='';
+            this.refs.email.value='';
+            this.refs.message.value='';
           }, 3000);
-          this.refs.name.value='';
-          this.refs.email.value='';
-          this.refs.message.value='';
         }
   });
 } else if(name===''){
