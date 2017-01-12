@@ -122,7 +122,7 @@ header{
 .proj-page{
   text-align: center;
   background: whitesmoke;
-  padding: 20px 0;
+  padding: 40px 0;
   height: 544px;
   position: relative;
   h3{
@@ -154,12 +154,11 @@ header{
   }
   .fa{
     position: absolute;
+    bottom: 30px;
     &:nth-of-type(1){
-      bottom: 20px;
       left: 20px;
     }
     &:nth-of-type(2){
-      bottom: 20px;
       right: 20px;
     }
   }
@@ -229,5 +228,15 @@ footer{
     .projects{
       width: 100%;
     }
+  }
+  #form-container{
+    form{
+      textarea{
+        width: 300px;
+      }
+    }
+  }
+  .proj-page{
+    height: auto;
   }
 }
