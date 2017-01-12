@@ -97,18 +97,20 @@ header{
         color: white;
       }
     }
-    &:hover .title-container{
-      display: none;
-    }
+
     .image-container {
       background-color: #404040;
+      &:hover .title-container{
+        display: none;
+      }
+      &:hover img{
+        opacity: 1;
+      }
     }
     img {
       opacity: 0.6;
     }
-    &:hover img{
-      opacity: 1;
-    }
+
   }
 
 }
