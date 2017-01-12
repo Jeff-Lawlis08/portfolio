@@ -12,8 +12,8 @@ export default React.createClass({
     let emailForm;
     if(this.state.sent===false){
       emailForm=  (
-        <div id='form-container'>
-          <h3>Contact Me</h3>
+        <div>
+          <h2>Contact Me</h2>
           <form id='contact' onSubmit={this.handleSubmit}>
             <input ref='name' type='text' placeholder='Your Name'/>
             <input ref='email' type='email' placeholder='Your Email'/>
@@ -28,7 +28,7 @@ export default React.createClass({
       );
     }
     return(
-      <div>
+      <div id='form-container'>
         {emailForm}
       </div>
     );
@@ -58,7 +58,6 @@ export default React.createClass({
           setTimeout(()=>{
             this.setState({sent: false});
           }, 3000);
-          console.log(this);
           this.refs.name.value='';
           this.refs.email.value='';
           this.refs.message.value='';

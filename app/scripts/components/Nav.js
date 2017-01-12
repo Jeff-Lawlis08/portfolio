@@ -9,6 +9,7 @@ export default React.createClass({
           <span>Jeff Lawlis</span>
           <span>Web Developer</span>
         </div>
+        <a href="/#form-container">CONTACT</a>
         <a href="/#personal">ABOUT ME</a>
         <a href="/#project-container">PROJECTS</a>
         <Link to="/resume">RÈSUMÈ</Link>
