@@ -148,6 +148,25 @@ header{
     }
   }
 }
+#form-container{
+  padding-bottom: 30px;
+  margin: 0 5%;
+  text-align: center;
+  form{
+    width: 200px;
+    margin: 0 auto;
+    input{
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+    }
+    textarea{
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+}
 footer{
   position: fixed;
   background: black;

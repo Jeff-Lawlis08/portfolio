@@ -7,7 +7,7 @@ export default React.createClass({
   render(){
       return(
         <div>
-          <Nav params={this.props.params.project}/>
+          <Nav params={this.props.params}/>
           {this.props.children}
           <Footer/>
         </div>
