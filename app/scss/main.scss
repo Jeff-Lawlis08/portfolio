@@ -249,5 +249,17 @@ footer{
   img{
     width: 100%;
   }
+  margin: 0;
 }
+}
+@media (max-width: 1030px) {
+  .proj-page{
+    height: auto;
+    img{
+      display: block;
+      margin: 0 auto;
+      height: 250px;
+      width: 400px;
+    }
+  }
 }
