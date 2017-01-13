@@ -6,8 +6,8 @@ import Contact from './Contact';
 export default React.createClass({
   render(){
     return(
-      <div className="home">
-        <header>
+      <div className='home'>
+        <header id='home'>
           <div id='name-skills'>
             <h1>Jeff Lawlis</h1>
             <span>Javascript / HTML / CSS / JQuery / React / Backbone</span>

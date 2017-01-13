@@ -13,7 +13,7 @@ export default React.createClass({
         <a href="/#personal">ABOUT ME</a>
         <a href="/#project-container">PROJECTS</a>
         <Link to="/resume">RÈSUMÈ</Link>
-        <Link to="/">HOME</Link>
+        <a href="/#home">HOME</a>
       </nav>
     );
   }
