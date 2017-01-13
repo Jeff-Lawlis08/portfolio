@@ -22,10 +22,15 @@ export default React.createClass({
     }
   },
   render(){
+    let allImages = this.state.project.pageImages.map((image, i, arr)=>{
+      return <img src={image} key={i}/>;
+    });
     return(
       <div className="proj-page">
         <h3>{this.state.project.name}</h3>
-        <img src={this.state.project.image}/>
+        <div id='proj-images'>
+          {allImages}
+        </div>
         <div id="proj-links">
           <a href={this.state.project.url}>See Live Project</a>
           <span>OR</span>
