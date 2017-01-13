@@ -34,7 +34,7 @@ nav {
   }
 }
 header{
-  height: 250px;
+  height: 500px;
   position: relative;
   background: gray;
   color: white;
@@ -53,6 +53,7 @@ header{
     object-fit: cover;
     height: 200px;
     width: 200px;
+    border-radius: 50%;
   }
   p{
     width: 70%;
@@ -127,6 +128,7 @@ header{
   }
   #proj-images{
     margin: 0 auto;
+    background: gray;
   }
   img{
     object-fit: contain;
@@ -185,6 +187,10 @@ header{
         width: 100px;
         background: black;
         color: white;
+        &:hover{
+          background: white;
+          color: black;
+        }
       }
     }
     textarea{
