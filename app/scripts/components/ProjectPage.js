@@ -41,10 +41,17 @@ export default React.createClass({
     let allImages = this.state.project.pageImages.map((image, i, arr)=>{
       return <img src={image} key={i}/>;
     });
+    let bgStyle = {
+      background: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${this.state.project.image})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+
+    }
     return(
       <div className="proj-page">
         <h3 id='proj-page-title'>{this.state.project.name}</h3>
-        <div id='proj-images'>
+        <div id='proj-images' style={bgStyle}>
           {allImages}
         </div>
         <div id="proj-links">
@@ -59,7 +66,6 @@ export default React.createClass({
         <a href={nextLink} className='prev-next'>
           <i className="fa fa-arrow-circle-right" aria-hidden="true" onClick={this.handleForward}></i>
         </a>
-
       </div>
     );
   },

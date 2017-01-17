@@ -9,8 +9,7 @@ export default React.createClass({
       <div className='home'>
         <header id='home'>
           <div id='name-skills'>
-            <h1>Jeff Lawlis</h1>
-            <span>Javascript / HTML / CSS / JQuery / React / Backbone</span>
+            <h1>Hi, I'm Jeff. </h1>
           </div>
         </header>
         <ProjectThumbs/>

@@ -36,15 +36,16 @@ nav {
 header{
   height: 500px;
   position: relative;
-  background: gray;
   color: white;
   font-family: 'Oswald', sans-serif;
+  background-image: url('../assets/images/header-bg.png');
   #name-skills{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
+    font-size: 30px;
   }
 }
 #personal{
@@ -76,17 +77,19 @@ header{
   }
   img{
     object-fit: cover;
-    height: 350px;
-    width: 350px;
+    height: 250px;
+    width: 250px;
   }
   .image-container {
-    height: 350px;
-    width: 350px;
+    height: 250px;
+    width: 250px;
     margin: 0 auto;
     position: relative;
   }
   .projects{
-    margin-bottom: 2rem;
+    margin: 10px;
+    display: inline-block;
+    width: 30%;
     .title-container{
       background-color: black;
       opacity: 0.7;
@@ -94,7 +97,7 @@ header{
       position: absolute;
       top: 0px;
       // left: 33px;
-      width: 350px;
+      width: 250px;
       text-align: center;
       h3{
         color: white;
@@ -128,7 +131,7 @@ header{
   }
   #proj-images{
     margin: 0 auto;
-    background: gray;
+    background: linear-gradient(0, 0, 0, 0.4);
   }
   img{
     object-fit: contain;
