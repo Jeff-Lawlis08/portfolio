@@ -238,13 +238,6 @@ footer{
   }
 }
 @media (max-width: 500px) {
-  #project-container{
-    margin: 0;
-    width: 100%;
-    .projects{
-      width: 100%;
-    }
-  }
   #form-container{
     form{
       margin: 0;
@@ -262,6 +255,15 @@ footer{
   }
   margin: 0;
 }
+}
+@media (max-width: 800px) {
+  #project-container{
+    margin: 0;
+    width: 100%;
+    .projects{
+      width: 100%;
+    }
+  }
 }
 @media (max-width: 1030px) {
   .proj-page{
