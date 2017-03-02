@@ -19,7 +19,7 @@ let projects = [
     name: 'Jeopardy',
     url: 'http://jeopardy.jefflawlis.com',
     githubUrl: 'https://github.com/Jeff-Lawlis08/jeopardy',
-    image: '../../assets/images/jeopardy-background.jpg',
+    image: '../../assets/images/jeopardy-logo.jpeg',
     pageImages: ['../../assets/images/Game-board.png', '../../assets/images/Question-modal.png', '../../assets/images/Post-answer.png'],
     description: 'The goal of this project was to create a playable Jeopardy game using React. I used an API called jservice to obtain the questions. I used state to manage the modal that contains the question and answer form. I used Backbone models and collections to keep track of the logged in user, the questions, and the categories. The most difficult part of this project was calling for the questions on page-load, and determining if the user\'s answer was correct.',
   }
