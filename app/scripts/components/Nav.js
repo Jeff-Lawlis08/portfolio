@@ -12,13 +12,15 @@ export default React.createClass({
     if(this.state.dropdown===true){
       menu = (
           <div id='dropdown'>
-            <a href="/#home">HOME</a>
-            <Link to="/resume">RÈSUMÈ</Link>
-            <a href="/#project-container">PROJECTS</a>
-            <a href="/#personal">ABOUT ME</a>
-            <a href="/#form-container">CONTACT</a>
+            <a onClick={this.handleClick} href="/#home">HOME</a>
+            <Link onClick={this.handleClick} to="/resume">RÈSUMÈ</Link>
+            <a onClick={this.handleClick} href="/#project-container">PROJECTS</a>
+            <a onClick={this.handleClick} href="/#personal">ABOUT ME</a>
+            <a onClick={this.handleClick} href="/#form-container">CONTACT</a>
           </div>
         )
+    } else {
+      menu = (<span/>)
     }
     return(
       <nav>

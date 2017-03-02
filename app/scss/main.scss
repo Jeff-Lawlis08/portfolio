@@ -267,7 +267,7 @@ footer{
     #hamburger{
       display: inline-block;
       position: absolute;
-      right: 0;
+      right: 1%;
       top: 50%;
       transform: translateY(-50%);
       #dropdown{
@@ -275,7 +275,7 @@ footer{
         background: white;
         position: absolute;
         right: 0;
-        top: 100%;
+        top: 125%;
         text-align: center;
         width: 1000%;
       }
